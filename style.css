@@ -1,0 +1,26 @@
+body {
+    background: #eeeeee;
+}
+
+.mainword {
+    position: relative;
+    top: 20px;
+    left: 30px;
+    width: 500px;
+    height: 400px;
+}
+
+svg {
+    width: 100%;
+    height: 100%;
+    background: #2a3140;
+}
+
+.mdl-card__supporting-text span {
+    font-size: 15px;
+}
+
+.floating {
+    float: left;
+    display: inline-block;
+}
