@@ -14,7 +14,7 @@ body {
 
 .mainword {
     position: relative;
-    width: 350px;
+    width: 300px;
     float: left;
     display: inline-block;
 }
@@ -29,14 +29,27 @@ svg {
     font-size: 15px;
 }
 
+
+
 .mainword-right {
     float: right;
 }
 
-.mainword .mdl-card__title {
-    background: #3b4356;
-    color: white;
+.mainword .card-header {
+    background: #2a3140;
 }
+
+.mainword .card-description {
+    font-size: 15px;
+    background: white;
+}
+
+.card-header h1 {
+    color:white;
+}
+
+
+
 
 .block .plus-sign {
     zoom: 3;
