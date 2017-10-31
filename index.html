@@ -1,89 +1,114 @@
 <!DOCTYPE html>
-<html lang="en">
+
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Google Material Design Service</title>
+    <meta charset="utf-8">
+    <title>Google material Design</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--<link rel="icon" type="image/png" href="/images/logo_components_color_2x_web_48dp.png">-->
 
-    <!-- Lattero Design CDN Dependency -->
-    <link rel = "stylesheet" href = "https://storage.googleapis.com/code.getmdl.io/1.0.6/material.indigo-pink.min.css">
-    <script src = "https://storage.googleapis.com/code.getmdl.io/1.0.6/material.min.js"></script>
-    <link rel = "stylesheet" href = "https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.css">
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.js"></script>
 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <style>
+        /* Ensure layout covers the entire screen. */
+        html {
+            height: 100%;
+        }
+
+        /* Place drawer and content side by side. */
+        .demo-body {
+            display: flex;
+            flex-direction: row;
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            height: 100%;
+            width: 100%;
+        }
+
+        /* Stack toolbar and main on top of each other. */
+        .demo-content {
+            display: inline-flex;
+            flex-direction: column;
+            flex-grow: 1;
+            height: 100%;
+            box-sizing: border-box;
+        }
+
+        .demo-main {
+            padding-left: 16px;
+        }
+    </style>
 </head>
-<body>
+<body class="demo-body mdc-typography">
+<aside class="mdc-persistent-drawer">
+    <nav class="mdc-persistent-drawer__drawer">
+        <div class="mdc-persistent-drawer__toolbar-spacer"></div>
+        <div class="mdc-list-group">
+            <nav class="mdc-list">
+                <a class="mdc-list-item mdc-persistent-drawer--selected" href="#">
+                    <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">inbox</i>Inbox
+                </a>
+                <a class="mdc-list-item" href="#">
+                    <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">star</i>Star
+                </a>
+                <a class="mdc-list-item" href="#">
+                    <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">send</i>Sent Mail
+                </a>
+                <a class="mdc-list-item" href="#">
+                    <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">drafts</i>Drafts
+                </a>
+            </nav>
 
-    <!-- Always shows a header, even in smaller screens. -->
-    <div class = "mdl-layout mdl-js-layout mdl-layout--fixed-header">
-        <header class = "mdl-layout__header">
-            <div class = "mdl-layout__header-row">
-                <!-- Title -->
-                <span class = "mdl-layout-title">Lattero</span>
-                <!-- Add spacer, to align navigation to the right -->
-                <div class = "mdl-layout-spacer"></div>
-                <!-- Navigation -->
-                <nav class = "mdl-navigation">
-                    <a class = "mdl-navigation__link" href = ""
-                       style = "color:gray">Home</a>
-                    <a class = "mdl-navigation__link" href = ""
-                       style = "color:gray">About</a>
-                </nav>
-            </div>
-        </header>
+            <hr class="mdc-list-divider">
 
-        <div class = "mdl-layout__drawer">
-            <span class = "mdl-layout-title">Lattero</span>
-            <nav class = "mdl-navigation">
-                <a class = "mdl-navigation__link" href = "">Home</a>
-                <a class = "mdl-navigation__link" href = "">About</a>
+            <nav class="mdc-list">
+                <a class="mdc-list-item" href="#">
+                    <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">email</i>All Mail
+                </a>
+                <a class="mdc-list-item" href="#">
+                    <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">delete</i>Trash
+                </a>
+                <a class="mdc-list-item" href="#">
+                    <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">report</i>Spam
+                </a>
             </nav>
         </div>
+    </nav>
+</aside>
+<div class="demo-content">
+    <header class="mdc-toolbar mdc-elevation--z4">
+        <div class="mdc-toolbar__row">
+            <section class="mdc-toolbar__section mdc-toolbar__section--align-start">
+                <button class="demo-menu material-icons mdc-toolbar__menu-icon">menu</button>
+                <span class="mdc-toolbar__title catalog-title">Persistent Drawer</span>
+            </section>
+        </div>
+    </header>
 
-        <main class = "mdl-layout__content">
+    <main class="demo-main">
+        <h1 class="mdc-typography--display1">Persistent Drawer</h1>
+        <p class="mdc-typography--body1">Click the menu icon above to open and close the drawer.</p>
+    </main>
 
-            <div class="block">
-
-                <div class = "wide-card mdl-card mdl-shadow--2dp mainword mainword-left">
-                    <div class = "mdl-card__title">
-                        <h2 class = "mdl-card__title-text">Машина</h2>
-
-                        <button class = "mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored fab-randomize">
-                            <i class = "material-icons">autorenew</i>
-                        </button>
-
-                    </div>
-                    <div class = "mdl-card__supporting-text">
-                        <span>
-                            ...имеет колеса<br/>
-                            ...двигатель внутреннего сгорания<br/>
-                            ...аккумулятор питает фары и приборную панель<br/>
-                        </span>
-                    </div>
-                </div>
-
-                <i class = "material-icons plus-sign">add</i>
-
-                <div class = "wide-card mdl-card mdl-shadow--2dp mainword mainword-right">
-                    <div class = "mdl-card__title">
-                        <h2 class = "mdl-card__title-text">Машина</h2>
-
-                        <button class = "mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored fab-randomize">
-                            <i class = "material-icons">autorenew</i>
-                        </button>
-                    </div>
-                    <div class = "mdl-card__supporting-text">
-                        <span>
-                            ...имеет колеса<br/>
-                            ...двигатель внутреннего сгорания<br/>
-                            ...аккумулятор питает фары и приборную панель<br/>
-                        </span>
-                    </div>
-                </div>
-
-            </div>
-
-        </main>
-    </div>
-
+    <script>
+        var drawerEl = document.querySelector('.mdc-persistent-drawer');
+        var MDCPersistentDrawer = mdc.drawer.MDCPersistentDrawer;
+        var drawer = new MDCPersistentDrawer(drawerEl);
+        document.querySelector('.demo-menu').addEventListener('click', function() {
+            drawer.open = !drawer.open;
+        });
+        drawerEl.addEventListener('MDCPersistentDrawer:open', function() {
+            console.log('Received MDCPersistentDrawer:open');
+        });
+        drawerEl.addEventListener('MDCPersistentDrawer:close', function() {
+            console.log('Received MDCPersistentDrawer:close');
+        });
+    </script>
+</div>
 </body>
 </html>
