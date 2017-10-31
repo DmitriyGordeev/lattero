@@ -18,7 +18,25 @@ function material_setup() {
 jQuery(document).ready(function() {
     material_setup();
 
-    jQuery(".dissasemble").click(function() {
-        alert("Whoops!");
+    /* Dialog: */
+    var dialog = new mdc.dialog.MDCDialog(document.querySelector('#mdc-dialog-with-list'));
+    dialog.listen('MDCDialog:accept', function() {
+        console.log('accepted');
     });
+    dialog.listen('MDCDialog:cancel', function() {
+        console.log('canceled');
+    });
+
+
+    jQuery(".dissasemble").click(function(event) {
+        dialog.lastFocusedTarget = event.target;
+        dialog.show();
+    });
+
+
+
+
+
+
+
 });
