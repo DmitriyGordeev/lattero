@@ -14,7 +14,7 @@ body {
 
 .mainword {
     position: relative;
-    width: 300px;
+    width: 350px;
     float: left;
     display: inline-block;
 }
@@ -28,8 +28,6 @@ svg {
 .mdl-card__supporting-text span {
     font-size: 15px;
 }
-
-
 
 .mainword-right {
     float: right;
