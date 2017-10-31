@@ -1,3 +1,4 @@
+
 function material_setup() {
     var drawerEl = document.querySelector('.mdc-persistent-drawer');
     var MDCPersistentDrawer = mdc.drawer.MDCPersistentDrawer;
@@ -25,6 +26,7 @@ function material_setup() {
 
 }
 
+
 jQuery(document).ready(function() {
     material_setup();
 
@@ -43,14 +45,21 @@ jQuery(document).ready(function() {
         dialog.show();
     });
 
+
     jQuery(".question-quad").hover(function() {
         jQuery(this).toggleClass("mdc-elevation--z0");
-        jQuery(this).toggleClass("mdc-elevation--z8");
+        jQuery(this).toggleClass("mdc-elevation--z3");
     }, function() {
         jQuery(this).toggleClass("mdc-elevation--z0");
-        jQuery(this).toggleClass("mdc-elevation--z8");
+        jQuery(this).toggleClass("mdc-elevation--z3");
     });
 
 
+    jQuery(".question-quad").click(function() {
+        var t = jQuery(this);
+
+        jQuery(".question-quad").not(t).toggleClass("question-quad-minimized");
+        t.toggleClass("question-quad-expanded");
+    });
 
 });
