@@ -145,35 +145,134 @@
             </div>
 
 
-            <aside id="mdc-dialog-with-list"
+            <!--<aside id="mdc-dialog-with-list"-->
+                   <!--class="mdc-dialog"-->
+                   <!--role="alertdialog">-->
+                <!--<div class="mdc-dialog__surface">-->
+                    <!--<header class="mdc-dialog__header">-->
+                        <!--<h2 id="mdc-dialog-with-list-label" class="mdc-dialog__header__title">-->
+                            <!--Dialog Title!-->
+                        <!--</h2>-->
+                    <!--</header>-->
+                    <!--<section class="mdc-dialog__body mdc-dialog__body&#45;&#45;scrollable ">-->
+                        <!--&lt;!&ndash; Dialog Content Here! &ndash;&gt;-->
+
+                        <!--<div class="mdc-card demo-card mdc-elevation&#45;&#45;z1 question-quad">-->
+                            <!--<div class="mdc-card__horizontal-block card-description">-->
+                                <!--<section class="mdc-card__primary">-->
+                                    <!--<p>Block Title</p>-->
+                                    <!--<p>Some Text Some Some Text Some-->
+                                        <!--Some Text Some-->
+                                        <!--Some Text Some</p>-->
+                                <!--</section>-->
+                            <!--</div>-->
+                        <!--</div>-->
+
+                        <!--<div class="mdc-card demo-card mdc-elevation&#45;&#45;z1 question-quad">-->
+                            <!--<div class="mdc-card__horizontal-block card-description">-->
+                                <!--<section class="mdc-card__primary">-->
+                                    <!--<p>Block Title</p>-->
+                                <!--</section>-->
+                                <!--<section class="mdc-card__primary">-->
+                                    <!--<p>Some text here!</p>-->
+                                <!--</section>-->
+                            <!--</div>-->
+                        <!--</div>-->
+
+                        <!--<div class="mdc-card demo-card mdc-elevation&#45;&#45;z1 question-quad">-->
+                            <!--<div class="mdc-card__horizontal-block card-description">-->
+                                <!--<section class="mdc-card__primary">-->
+                                    <!--<p>Block Title</p>-->
+                                <!--</section>-->
+                                <!--<section class="mdc-card__primary">-->
+                                    <!--<p>Some text here!</p>-->
+                                <!--</section>-->
+                            <!--</div>-->
+                        <!--</div>-->
+
+                        <!--<div class="mdc-card demo-card mdc-elevation&#45;&#45;z1 question-quad">-->
+                            <!--<div class="mdc-card__horizontal-block card-description">-->
+                                <!--<section class="mdc-card__primary">-->
+                                    <!--<p>Block Title</p>-->
+                                <!--</section>-->
+                                <!--<section class="mdc-card__primary">-->
+                                    <!--<p>Some text here!</p>-->
+                                <!--</section>-->
+                            <!--</div>-->
+                        <!--</div>-->
+
+
+
+                    <!--</section>-->
+                    <!--<footer class="mdc-dialog__footer">-->
+                        <!--<button type="button" class="mdc-button mdc-dialog__footer__button mdc-dialog__footer__button&#45;&#45;cancel">Decline</button>-->
+                        <!--<button type="button" class="mdc-button mdc-dialog__footer__button mdc-dialog__footer__button&#45;&#45;accept">Accept</button>-->
+                    <!--</footer>-->
+                <!--</div>-->
+                <!--<div class="mdc-dialog__backdrop"></div>-->
+            <!--</aside>-->
+
+            <aside id="my-mdc-dialog"
                    class="mdc-dialog"
-                   role="alertdialog">
+                   role="alertdialog"
+                   aria-labelledby="my-mdc-dialog-label"
+                   aria-describedby="my-mdc-dialog-description">
                 <div class="mdc-dialog__surface">
-                    <header class="mdc-dialog__header">
-                        <h2 id="mdc-dialog-with-list-label" class="mdc-dialog__header__title">
-                            Dialog Title!
+                    <header class="mdc-dialog__header bottomborder">
+                        <h2 id="my-mdc-dialog-label" class="mdc-dialog__header__title">
+                            Use Google's location service?
                         </h2>
                     </header>
-                    <section class="mdc-dialog__body mdc-dialog__body--scrollable">
-                        <!-- Dialog Content Here! -->
+                    <section id="my-mdc-dialog-description" class="mdc-dialog__body">
 
-                        <label class="mdc-textfield">
-                            <input type="text" class="mdc-textfield__input">
-                            <span class="mdc-textfield__label">Hint Text</span>
-                            <div class="mdc-textfield__bottom-line"></div>
-                        </label><br>
+                        <div class="mdc-card demo-card mdc-elevation--z10 question-quad">
+                            <div class="mdc-card__horizontal-block card-description">
+                                <section class="mdc-card__primary">
+                                    <p>Block Title</p>
+                                    <p>Some Text Some Some Text Some
+                                    Some Text Some
+                                    Some Text Some</p>
+                                </section>
+                            </div>
+                        </div>
 
-                        <label class="mdc-textfield">
-                            <input type="text" class="mdc-textfield__input">
-                            <span class="mdc-textfield__label">Hint Text</span>
-                            <div class="mdc-textfield__bottom-line"></div>
-                        </label><br>
+                        <div class="mdc-card demo-card mdc-elevation--z1 question-quad">
+                            <div class="mdc-card__horizontal-block card-description">
+                                <section class="mdc-card__primary">
+                                    <p>Block Title</p>
+                                    <p>Some Text Some Some Text Some
+                                        Some Text Some
+                                        Some Text Some</p>
+                                </section>
+                            </div>
+                        </div>
 
-                        <label class="mdc-textfield">
-                            <input type="text" class="mdc-textfield__input">
-                            <span class="mdc-textfield__label">Hint Text</span>
-                            <div class="mdc-textfield__bottom-line"></div>
-                        </label>
+                        <div class="mdc-card demo-card mdc-elevation--z1 question-quad">
+                            <div class="mdc-card__horizontal-block card-description">
+                                <section class="mdc-card__primary">
+                                    <p>Block Title</p>
+                                    <p>Some Text Some Some Text Some
+                                        Some Text Some
+                                        Some Text Some</p>
+                                </section>
+                            </div>
+                        </div>
+
+                        <div class="mdc-card demo-card mdc-elevation--z1 question-quad">
+                            <div class="mdc-card__horizontal-block card-description">
+                                <section class="mdc-card__primary">
+                                    <p>Block Title</p>
+                                </section>
+                                <section class="mdc-card__primary">
+                                    <p>Some text here!</p>
+                                </section>
+                            </div>
+                        </div>
+
+
+
+
+
 
 
 

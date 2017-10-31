@@ -29,7 +29,7 @@ jQuery(document).ready(function() {
     material_setup();
 
     /* Dialog: */
-    var dialog = new mdc.dialog.MDCDialog(document.querySelector('#mdc-dialog-with-list'));
+    var dialog = new mdc.dialog.MDCDialog(document.querySelector('#my-mdc-dialog'));
     dialog.listen('MDCDialog:accept', function() {
         console.log('accepted');
     });

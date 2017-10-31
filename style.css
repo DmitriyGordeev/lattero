@@ -52,6 +52,25 @@ svg {
     top: 42px;
 }
 
+.mdc-dialog__surface {
+
+}
+
+.bottomborder {
+    border-bottom: 1px solid #eeeeee;
+}
+
+.mdc-dialog__body--scrollable {
+    height: 800px;
+    background: yellow;
+}
+
+.question-quad {
+    display: inline-block;
+    width: 400px;
+    height: 150px;
+    float:left;
+}
 
 .block .plus-sign {
     zoom: 3;
