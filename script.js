@@ -17,4 +17,8 @@ function material_setup() {
 
 jQuery(document).ready(function() {
     material_setup();
+
+    jQuery(".dissasemble").click(function() {
+        alert("Whoops!");
+    });
 });
