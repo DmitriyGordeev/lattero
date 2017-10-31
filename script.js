@@ -43,6 +43,14 @@ jQuery(document).ready(function() {
         dialog.show();
     });
 
+    jQuery(".question-quad").hover(function() {
+        jQuery(this).toggleClass("mdc-elevation--z0");
+        jQuery(this).toggleClass("mdc-elevation--z8");
+    }, function() {
+        jQuery(this).toggleClass("mdc-elevation--z0");
+        jQuery(this).toggleClass("mdc-elevation--z8");
+    });
+
 
 
 });
