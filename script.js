@@ -12,7 +12,17 @@ function material_setup() {
         console.log('Received MDCPersistentDrawer:close');
     });
 
-    mdc.ripple.MDCRipple.attachTo(document.querySelector('.mdc-fab'));
+
+    var mdcFabsElements = document.querySelectorAll('.mdc-fab');
+    for(var i = 0; i < mdcFabsElements.length; i++) {
+        mdc.ripple.MDCRipple.attachTo(mdcFabsElements[i]);
+    }
+
+    var mdcTextFields = document.querySelectorAll('.mdc-textfield');
+    for(i = 0; i < mdcTextFields.length; i++) {
+        mdc.textfield.MDCTextfield.attachTo(mdcTextFields[i]);
+    }
+
 }
 
 jQuery(document).ready(function() {
