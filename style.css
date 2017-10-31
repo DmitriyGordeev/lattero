@@ -52,12 +52,10 @@ svg {
     top: 42px;
 }
 
-.mdc-dialog__surface {
-
-}
 
 .bottomborder {
-    border-bottom: 1px solid #eeeeee;
+    border-bottom: 1px solid #dddddd;
+    padding-bottom: 20px;
 }
 
 .mdc-dialog__body--scrollable {
