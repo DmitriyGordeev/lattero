@@ -46,6 +46,12 @@ svg {
     color:white;
 }
 
+.card-header button {
+    position: absolute;
+    right: 30px;
+    top: 42px;
+}
+
 
 
 

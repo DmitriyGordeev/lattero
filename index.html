@@ -43,6 +43,9 @@
         }
     </style>
 
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body class="demo-body mdc-typography">
@@ -99,6 +102,11 @@
                     <section class="mdc-card__primary">
                         <h1 class="mdc-card__title mdc-card__title--large">Title here</h1>
                     </section>
+
+                    <button class="mdc-fab material-icons" data-mdc-auto-init="MDCRipple">
+                      <span class="mdc-fab__icon">autorenew</span>
+                    </button>
+
                 </div>
                 <div class="mdc-card__horizontal-block card-description">
                     <section class="mdc-card__primary">
@@ -112,6 +120,10 @@
                     <section class="mdc-card__primary">
                         <h1 class="mdc-card__title mdc-card__title--large">Title here</h1>
                     </section>
+
+                    <button class="mdc-fab material-icons" data-mdc-auto-init="MDCRipple">
+                        <span class="mdc-fab__icon">autorenew</span>
+                    </button>
                 </div>
                 <div class="mdc-card__horizontal-block card-description">
                     <section class="mdc-card__primary">
@@ -136,6 +148,8 @@
         drawerEl.addEventListener('MDCPersistentDrawer:close', function() {
             console.log('Received MDCPersistentDrawer:close');
         });
+
+        mdc.ripple.MDCRipple.attachTo(document.querySelector('.mdc-fab'));
     </script>
 </div>
 </body>
