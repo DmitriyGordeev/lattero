@@ -71,14 +71,24 @@ jQuery(document).ready(function() {
         jQuery(".question-quad").not(t).toggleClass("question-quad-minimized");
         t.toggleClass("question-quad-expanded");
 
+        // swap content:
         t.find("div.question-content").toggle();
         t.find("div.question-content-expanded").toggle();
     });
 
 
     /* Press Back button on expanded card to collapse: */
-    jQuery(".question-button-back").click(function() {
+    jQuery("button.question-button-back").click(function(event) {
 
+        var card = jQuery(this).closest(".question-quad");
+        card.removeClass("question-quad-expanded");
+        event.stopPropagation();
+
+        // swap content:
+        card.find("div.question-content").toggle();
+        card.find("div.question-content-expanded").toggle();
+
+        jQuery(".question-quad").removeClass("question-quad-minimized");
     });
 
 });
