@@ -64,6 +64,10 @@ svg {
     background: yellow;
 }
 
+.mdc-dialog__body {
+    min-height: 300px;
+}
+
 .question-quad {
     display: inline-block;
     width: 400px;

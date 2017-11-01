@@ -30,6 +30,8 @@ function material_setup() {
 jQuery(document).ready(function() {
     material_setup();
 
+    jQuery(".question-content-expanded").toggle();
+
     /* Dialog: */
     var dialog = new mdc.dialog.MDCDialog(document.querySelector('#question-dialog'));
     dialog.listen('MDCDialog:accept', function() {
@@ -57,9 +59,12 @@ jQuery(document).ready(function() {
 
     jQuery(".question-quad").click(function() {
         var t = jQuery(this);
-
         jQuery(".question-quad").not(t).toggleClass("question-quad-minimized");
         t.toggleClass("question-quad-expanded");
+
+        jQuery(".question-content-minimized").toggle();
+        jQuery(".question-content-expanded").toggle();
+
     });
 
 });
