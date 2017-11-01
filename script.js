@@ -59,6 +59,7 @@ jQuery(document).ready(function() {
     });
 
 
+    /* Expands question-card: */
     jQuery(".question-quad").click(function() {
 
         // TODO: refactor this via css (no js)
@@ -70,8 +71,14 @@ jQuery(document).ready(function() {
         jQuery(".question-quad").not(t).toggleClass("question-quad-minimized");
         t.toggleClass("question-quad-expanded");
 
-        jQuery(".question-content-minimized").toggle();
-        jQuery(".question-content-expanded").toggle();
+        t.find("div.question-content").toggle();
+        t.find("div.question-content-expanded").toggle();
+    });
+
+
+    /* Press Back button on expanded card to collapse: */
+    jQuery(".question-button-back").click(function() {
+
     });
 
 });
