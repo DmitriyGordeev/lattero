@@ -207,12 +207,12 @@
                                             <div class="mdc-textfield__bottom-line"></div>
                                         </div>
 
-                                        <button class="mdc-fab material-icons question-button-done" data-mdc-auto-init="MDCRipple">
-                                            <span class="mdc-fab__icon">done</span>
-                                        </button>
-                                        <button class="mdc-fab material-icons question-button-back" data-mdc-auto-init="MDCRipple">
-                                            <span class="mdc-fab__icon">keyboard_backspace</span>
-                                        </button>
+                                        <!--<button class="mdc-fab material-icons question-button-done" data-mdc-auto-init="MDCRipple">-->
+                                            <!--<span class="mdc-fab__icon">done</span>-->
+                                        <!--</button>-->
+                                        <!--<button class="mdc-fab material-icons question-button-back" data-mdc-auto-init="MDCRipple">-->
+                                            <!--<span class="mdc-fab__icon">keyboard_backspace</span>-->
+                                        <!--</button>-->
                                     </div>
                                 </section>
                             </div>
@@ -236,8 +236,20 @@
                     </section>
 
                     <footer class="mdc-dialog__footer">
-                        <button type="button" class="mdc-button mdc-dialog__footer__button mdc-dialog__footer__button--cancel" id="button-dialog-decline">Decline</button>
-                        <button type="button" class="mdc-button mdc-dialog__footer__button mdc-dialog__footer__button--accept" id="button-dialog-accept">Accept</button>
+                        <div id="dialog-buttons">
+                            <button type="button" class="mdc-button mdc-dialog__footer__button mdc-dialog__footer__button--cancel" id="button-dialog-decline">Decline</button>
+                            <button type="button" class="mdc-button mdc-dialog__footer__button mdc-dialog__footer__button--accept" id="button-dialog-accept">Accept</button>
+                        </div>
+
+                        <div id="dialog-question-fabs">
+                            <button class="mdc-fab material-icons question-button-back" data-mdc-auto-init="MDCRipple">
+                                <span class="mdc-fab__icon">keyboard_backspace</span>
+                            </button>
+                            <button class="mdc-fab material-icons question-button-done" data-mdc-auto-init="MDCRipple">
+                                <span class="mdc-fab__icon">done</span>
+                            </button>
+                        </div>
+
                     </footer>
                 </div>
                 <div class="mdc-dialog__backdrop"></div>

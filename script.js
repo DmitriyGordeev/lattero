@@ -31,6 +31,7 @@ jQuery(document).ready(function() {
 
     material_setup();
     jQuery(".question-content-expanded").toggle();
+    jQuery("#dialog-question-fabs").toggle();
 
     /* Dialog: */
     var dialog = new mdc.dialog.MDCDialog(document.querySelector('#question-dialog'));
@@ -73,8 +74,8 @@ jQuery(document).ready(function() {
         t.find("div.question-content").toggle();
         t.find("div.question-content-expanded").toggle();
 
-        jQuery("#button-dialog-accept").toggle();
-        jQuery("#button-dialog-decline").toggle();
+        jQuery("#dialog-buttons").toggle();
+        jQuery("#dialog-question-fabs").toggle();
     });
 
 

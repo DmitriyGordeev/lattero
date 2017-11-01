@@ -100,17 +100,20 @@ svg {
     transition: all 0.05s ease;
 }
 
-.question-button-done {
-    position: absolute;
-    right: 40px;
-    bottom: 40px;
-}
 
 .question-button-back {
     position: absolute;
-    right: 110px;
-    bottom: 40px;
+    bottom: 15px;
+    left: 30px;
 }
+
+.question-button-done {
+    position: relative;
+    bottom: 5px;
+    right: 20px;
+}
+
+
 
 
 .block .plus-sign {
