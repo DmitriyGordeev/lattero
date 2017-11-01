@@ -58,13 +58,17 @@ jQuery(document).ready(function() {
 
 
     jQuery(".question-quad").click(function() {
+
         var t = jQuery(this);
+        if(t.hasClass("question-quad-expanded")) {
+            return;
+        }
+
         jQuery(".question-quad").not(t).toggleClass("question-quad-minimized");
         t.toggleClass("question-quad-expanded");
 
         jQuery(".question-content-minimized").toggle();
         jQuery(".question-content-expanded").toggle();
-
     });
 
 });
