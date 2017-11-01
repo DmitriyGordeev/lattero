@@ -28,8 +28,8 @@ function material_setup() {
 
 
 jQuery(document).ready(function() {
-    material_setup();
 
+    material_setup();
     jQuery(".question-content-expanded").toggle();
 
     /* Dialog: */
@@ -49,9 +49,11 @@ jQuery(document).ready(function() {
 
 
     jQuery(".question-quad").hover(function() {
+
         jQuery(this).toggleClass("mdc-elevation--z0");
         jQuery(this).toggleClass("mdc-elevation--z3");
     }, function() {
+
         jQuery(this).toggleClass("mdc-elevation--z0");
         jQuery(this).toggleClass("mdc-elevation--z3");
     });
@@ -59,6 +61,7 @@ jQuery(document).ready(function() {
 
     jQuery(".question-quad").click(function() {
 
+        // TODO: refactor this via css (no js)
         var t = jQuery(this);
         if(t.hasClass("question-quad-expanded")) {
             return;
