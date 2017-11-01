@@ -80,20 +80,23 @@ jQuery(document).ready(function() {
 
 
     /* Press Back button on expanded card to collapse: */
-    jQuery("button.question-button-back").click(function(event) {
+    jQuery("#question-button-back").click(function(event) {
 
-        var card = jQuery(this).closest(".question-quad");
-        card.removeClass("question-quad-expanded");
-        event.stopPropagation();
+        // collapse expanded card:
+        var expandedCard = jQuery(".question-quad-expanded");
+        expandedCard.removeClass("question-quad-expanded");
 
         // swap content:
-        card.find("div.question-content").toggle();
-        card.find("div.question-content-expanded").toggle();
+        expandedCard.find("div.question-content").toggle();
+        expandedCard.find("div.question-content-expanded").toggle();
+        event.stopPropagation();
 
+        // return all minimized quads:
         jQuery(".question-quad").removeClass("question-quad-minimized");
 
-        jQuery("#button-dialog-accept").toggle();
-        jQuery("#button-dialog-decline").toggle();
+        // exchange dialog buttons:
+        jQuery("#dialog-buttons").toggle();
+        jQuery("#dialog-question-fabs").toggle();
     });
 
 });
