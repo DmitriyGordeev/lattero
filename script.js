@@ -74,6 +74,9 @@ jQuery(document).ready(function() {
         // swap content:
         t.find("div.question-content").toggle();
         t.find("div.question-content-expanded").toggle();
+
+        jQuery("#button-dialog-accept").toggle();
+        jQuery("#button-dialog-decline").toggle();
     });
 
 
@@ -89,6 +92,9 @@ jQuery(document).ready(function() {
         card.find("div.question-content-expanded").toggle();
 
         jQuery(".question-quad").removeClass("question-quad-minimized");
+
+        jQuery("#button-dialog-accept").toggle();
+        jQuery("#button-dialog-decline").toggle();
     });
 
 });

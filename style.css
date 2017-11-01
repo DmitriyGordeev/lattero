@@ -103,13 +103,13 @@ svg {
 .question-button-done {
     position: absolute;
     right: 40px;
-    bottom: 100px;
+    bottom: 40px;
 }
 
 .question-button-back {
     position: absolute;
     right: 110px;
-    bottom: 100px;
+    bottom: 40px;
 }
 
 
