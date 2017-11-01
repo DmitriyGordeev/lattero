@@ -48,12 +48,10 @@ jQuery(document).ready(function() {
     });
 
 
-    jQuery(".question-quad").hover(function() {
-
+    jQuery('div.question-quad:not(".question-quad-expanded")').hover(function() {
         jQuery(this).toggleClass("mdc-elevation--z0");
         jQuery(this).toggleClass("mdc-elevation--z3");
     }, function() {
-
         jQuery(this).toggleClass("mdc-elevation--z0");
         jQuery(this).toggleClass("mdc-elevation--z3");
     });
