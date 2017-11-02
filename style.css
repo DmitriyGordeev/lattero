@@ -53,6 +53,10 @@ svg {
     top: 42px;
 }
 
+.card-description section {
+    width: 100%;
+}
+
 
 .bottomborder {
     border-bottom: 1px solid #dddddd;
@@ -125,6 +129,18 @@ svg {
 }
 
 
+.qa-item {
+    margin-top: 15px;
+}
+
+.qa-item span {
+    font-weight: 500;
+    color: #2a3140;
+}
+
+.qa-item p {
+    font-weight: 200;
+}
 
 .block .plus-sign {
     zoom: 3;
