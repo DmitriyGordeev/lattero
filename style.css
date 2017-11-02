@@ -153,3 +153,50 @@ svg {
     top: 30px;
     right: 30px;
 }
+
+
+
+/* From tabs example: */
+
+#dynamic-demo-toolbar h1 {
+    margin-left: 64px;
+}
+
+.panels {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 8px;
+}
+
+.panel {
+    display: none;
+}
+
+.panel.active {
+    display: block;
+}
+
+.dots {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 4px;
+    padding-bottom: 16px;
+}
+
+.dot {
+    margin: 0 4px;
+    border-radius: 50%;
+    border: 1px solid #64DD17;
+    width: 20px;
+    height: 20px;
+}
+
+.dot:last-child {
+    margin-right: 0;
+}
+
+.dot.active {
+    background-color: #64DD17;
+    border-color: #64DD17;
+}
