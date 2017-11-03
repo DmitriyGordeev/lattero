@@ -29,11 +29,9 @@ function material_setup() {
 
 function setup_tab(selector) {
 
-    var dynamicTabBarElement = document.querySelector(selector);
-
-    var dynamicTabBar = window.dynamicTabBar = new mdc.tabs.MDCTabBar(dynamicTabBarElement);
-    var dots = dynamicTabBarElement.querySelector('.dots');
-    var panels = dynamicTabBarElement.querySelector('.panels');
+    var dynamicTabBar = window.dynamicTabBar = new mdc.tabs.MDCTabBar(document.querySelector(selector));
+    var dots = document.querySelector('.dots');
+    var panels = document.querySelector('.panels');
 
     dynamicTabBar.preventDefaultOnClick = true;
 
@@ -89,7 +87,6 @@ jQuery(document).ready(function() {
 
     material_setup();
     setup_tab("#mainword-toolbar");
-    setup_tab("#mainword-right-toolbar");
 
 
     jQuery(".question-content-expanded").toggle();
