@@ -4,7 +4,7 @@ body {
 }
 
 .block {
-    width: 100%;
+    width: 70%;
     height: 400px;
     margin: 40px auto 0;
     padding: 20px 30px;
@@ -15,7 +15,7 @@ body {
 
 .mainword {
     position: relative;
-    width: 550px;
+    width: 350px;
     float: left;
     display: inline-block;
 }
@@ -209,12 +209,11 @@ svg {
 }
 
 .mainword a.mdc-tab {
-    width: 50px;
-    height: 20px;
+    height: 30px;
     padding: 0;
     margin: 0;
     display: inline-block;
-    min-width: 120px;
+    min-width: 70px;
     min-height: 0;
     font-size: 13px;
 }
