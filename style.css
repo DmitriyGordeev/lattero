@@ -208,14 +208,11 @@ svg {
 }
 
 .mainword .mdc-tab-bar {
-    border: 1px solid red;
+
 }
 
-.mainword .mdc-toolbar a[role="tab"] {
+.mainword .mdc-toolbar a.mdc-tab {
     font-size: 13px;
-    width: 10%;
-    margin: 0;
-    padding: 0;
     display: inline-block;
     float: left;
     background: #64DD17;
