@@ -15,7 +15,7 @@ body {
 
 .mainword {
     position: relative;
-    width: 350px;
+    width: 550px;
     float: left;
     display: inline-block;
 }
@@ -199,4 +199,24 @@ svg {
 .dot.active {
     background-color: #64DD17;
     border-color: #64DD17;
+}
+
+
+/* main word toolbar: */
+.mainword .mdc-toolbar {
+    background: transparent;
+}
+
+.mainword .mdc-tab-bar {
+    border: 1px solid red;
+}
+
+.mainword .mdc-toolbar a[role="tab"] {
+    font-size: 13px;
+    width: 10%;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    float: left;
+    background: #64DD17;
 }
