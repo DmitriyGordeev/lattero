@@ -57,6 +57,11 @@ svg {
     width: 100%;
 }
 
+.card-description .question-input {
+    width: 100%;
+    margin: 0;
+}
+
 
 .bottomborder {
     border-bottom: 1px solid #dddddd;

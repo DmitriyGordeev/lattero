@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8">
     <title>Google material Design</title>
@@ -50,6 +51,7 @@
     <script type="text/javascript" src="script.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body class="demo-body mdc-typography">
 <aside class="mdc-persistent-drawer">
     <nav class="mdc-persistent-drawer__drawer">
@@ -136,36 +138,85 @@
                             <div class="panels">
                                 <div class="panel active" id="panel-1" role="tabpanel" aria-hidden="true">
 
-                                    <div class="mdc-textfield">
+                                    <div class="mdc-textfield question-input">
                                         <input type="text" class="mdc-textfield__input">
-                                        <label class="mdc-textfield__label" >Назначение?</label>
+                                        <label class="mdc-textfield__label" >Зачем нужно? Какое у объекта назначение?</label>
+                                        <div class="mdc-textfield__bottom-line"></div>
+                                    </div>
+
+                                    <div class="mdc-textfield question-input">
+                                        <input type="text" class="mdc-textfield__input">
+                                        <label class="mdc-textfield__label" >В чем главная функция?</label>
+                                        <div class="mdc-textfield__bottom-line"></div>
+                                    </div>
+
+                                    <div class="mdc-textfield question-input">
+                                        <input type="text" class="mdc-textfield__input">
+                                        <label class="mdc-textfield__label" >Причина, по которой этим пользуются?</label>
                                         <div class="mdc-textfield__bottom-line"></div>
                                     </div>
 
                                 </div>
                                 <div class="panel" id="panel-2" role="tabpanel" aria-hidden="true">
 
-                                    <div class="mdc-textfield">
+                                    <div class="mdc-textfield question-input">
                                         <input type="text" class="mdc-textfield__input">
-                                        <label class="mdc-textfield__label" >Восприятие?</label>
+                                        <label class="mdc-textfield__label" >Какую форму имеет?</label>
+                                        <div class="mdc-textfield__bottom-line"></div>
+                                    </div>
+
+                                    <div class="mdc-textfield question-input">
+                                        <input type="text" class="mdc-textfield__input">
+                                        <label class="mdc-textfield__label" >Какие цвета присутствуют?</label>
+                                        <div class="mdc-textfield__bottom-line"></div>
+                                    </div>
+
+                                    <div class="mdc-textfield question-input">
+                                        <input type="text" class="mdc-textfield__input">
+                                        <label class="mdc-textfield__label" >Каких размеров бывает?</label>
+
                                         <div class="mdc-textfield__bottom-line"></div>
                                     </div>
 
                                 </div>
                                 <div class="panel" id="panel-3" role="tabpanel" aria-hidden="true">
 
-                                    <div class="mdc-textfield">
+                                    <div class="mdc-textfield question-input">
                                         <input type="text" class="mdc-textfield__input">
-                                        <label class="mdc-textfield__label" >Структура?</label>
+                                        <label class="mdc-textfield__label" >Разбейте на элементы. И чего состоит объект?</label>
+                                        <div class="mdc-textfield__bottom-line"></div>
+                                    </div>
+
+                                    <div class="mdc-textfield question-input">
+                                        <input type="text" class="mdc-textfield__input">
+                                        <label class="mdc-textfield__label" >Какой материал или вещество?</label>
+                                        <div class="mdc-textfield__bottom-line"></div>
+                                    </div>
+
+                                    <div class="mdc-textfield question-input">
+                                        <input type="text" class="mdc-textfield__input">
+                                        <label class="mdc-textfield__label" >Какие части ключевые?</label>
                                         <div class="mdc-textfield__bottom-line"></div>
                                     </div>
 
                                 </div>
                                 <div class="panel" id="panel-4" role="tabpanel" aria-hidden="true">
 
-                                    <div class="mdc-textfield">
+                                    <div class="mdc-textfield question-input">
                                         <input type="text" class="mdc-textfield__input">
-                                        <label class="mdc-textfield__label" >Люди?</label>
+                                        <label class="mdc-textfield__label" >Кто пользуется? Целевая аудитория?</label>
+                                        <div class="mdc-textfield__bottom-line"></div>
+                                    </div>
+
+                                    <div class="mdc-textfield question-input">
+                                        <input type="text" class="mdc-textfield__input">
+                                        <label class="mdc-textfield__label" >Кто создает?</label>
+                                        <div class="mdc-textfield__bottom-line"></div>
+                                    </div>
+
+                                    <div class="mdc-textfield question-input">
+                                        <input type="text" class="mdc-textfield__input">
+                                        <label class="mdc-textfield__label" >Какие впечатления у людей оставляет?</label>
                                         <div class="mdc-textfield__bottom-line"></div>
                                     </div>
 
@@ -395,84 +446,9 @@
             </aside>
         </div>
 
-
-
-
     </main>
-
-
-    <!--<script>-->
-        <!--(function() {-->
-            <!--setTimeout(function () {-->
-
-                <!--window.demoTabBar = new mdc.tabs.MDCTabBar(document.querySelector('#demo-tab-bar'));-->
-                <!--window.basicTabBar = new mdc.tabs.MDCTabBar(document.querySelector('#basic-tab-bar'));-->
-                <!--window.tabBarScroller = new mdc.tabs.MDCTabBarScroller(document.querySelector('#tab-bar-scroller'));-->
-                <!--window.iconTabBar = new mdc.tabs.MDCTabBar(document.querySelector('#icon-tab-bar'));-->
-                <!--window.iconTextTabBar = new mdc.tabs.MDCTabBar(document.querySelector('#icon-text-tab-bar'));-->
-                <!--window.toolbarTabBar = new mdc.tabs.MDCTabBar(document.querySelector('#toolbar-tab-bar'));-->
-                <!--window.toolbarTabBarModified = new mdc.tabs.MDCTabBar(document.querySelector('#toolbar-tab-bar-modified'));-->
-                <!--window.primaryIndicatorTabBar = new mdc.tabs.MDCTabBar(document.querySelector('#primary-indicator-tab-bar'));-->
-                <!--window.secondaryIndicatorTabBar = new mdc.tabs.MDCTabBar(document.querySelector('#secondary-indicator-tab-bar'));-->
-                <!--window.primaryIndicatorToolbarTabBar = new mdc.tabs.MDCTabBar(document.querySelector('#toolbar-tab-bar-primary-indicator'));-->
-                <!--window.secondaryIndicatorToolbarTabBar = new mdc.tabs.MDCTabBar(document.querySelector('#toolbar-tab-bar-secondary-indicator'));-->
-
-                <!--var dynamicTabBar = window.dynamicTabBar = new mdc.tabs.MDCTabBar(document.querySelector('#dynamic-tab-bar'));-->
-                <!--var dots = document.querySelector('.dots');-->
-                <!--var panels = document.querySelector('.panels');-->
-
-                <!--dynamicTabBar.preventDefaultOnClick = true;-->
-
-                <!--function updateDot(index) {-->
-                    <!--var activeDot = dots.querySelector('.dot.active');-->
-                    <!--if (activeDot) {-->
-                        <!--activeDot.classList.remove('active');-->
-                    <!--}-->
-                    <!--var newActiveDot = dots.querySelector('.dot:nth-child(' + (index + 1) + ')');-->
-                    <!--if (newActiveDot) {-->
-                        <!--newActiveDot.classList.add('active');-->
-                    <!--}-->
-                <!--}-->
-
-                <!--function updatePanel(index) {-->
-                    <!--var activePanel = panels.querySelector('.panel.active');-->
-                    <!--if (activePanel) {-->
-                        <!--activePanel.classList.remove('active');-->
-                    <!--}-->
-                    <!--var newActivePanel = panels.querySelector('.panel:nth-child(' + (index + 1) + ')');-->
-                    <!--if (newActivePanel) {-->
-                        <!--newActivePanel.classList.add('active');-->
-                    <!--}-->
-                <!--}-->
-
-                <!--dynamicTabBar.listen('MDCTabBar:change', function (t) {-->
-                    <!--var dynamicTabBar = t.detail;-->
-                    <!--var nthChildIndex = dynamicTabBar.activeTabIndex;-->
-
-                    <!--updatePanel(nthChildIndex);-->
-                    <!--updateDot(nthChildIndex);-->
-                <!--});-->
-
-                <!--dots.addEventListener('click', function (evt) {-->
-                    <!--if (!evt.target.classList.contains('dot')) {-->
-                        <!--return;-->
-                    <!--}-->
-
-                    <!--evt.preventDefault();-->
-
-                    <!--var dotIndex = [].slice.call(dots.querySelectorAll('.dot')).indexOf(evt.target);-->
-
-                    <!--if (dotIndex >= 0) {-->
-                        <!--dynamicTabBar.activeTabIndex = dotIndex;-->
-                    <!--}-->
-
-                    <!--updatePanel(dotIndex);-->
-                    <!--updateDot(dotIndex);-->
-                <!--});-->
-            <!--},200)-->
-        <!--})();-->
-    <!--</script>-->
 
 </div>
 </body>
+
 </html>
