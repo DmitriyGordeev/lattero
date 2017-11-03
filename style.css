@@ -4,7 +4,7 @@ body {
 }
 
 .block {
-    width: 900px;
+    width: 100%;
     height: 400px;
     margin: 40px auto 0;
     padding: 20px 30px;
@@ -205,15 +205,16 @@ svg {
 /* main word toolbar: */
 .mainword .mdc-toolbar {
     background: transparent;
+    margin-top: 15px;
 }
 
-.mainword .mdc-tab-bar {
-
-}
-
-.mainword .mdc-toolbar a.mdc-tab {
-    font-size: 13px;
+.mainword a.mdc-tab {
+    width: 50px;
+    height: 20px;
+    padding: 0;
+    margin: 0;
     display: inline-block;
-    float: left;
-    background: #64DD17;
+    min-width: 120px;
+    min-height: 0;
+    font-size: 13px;
 }

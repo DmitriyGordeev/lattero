@@ -27,11 +27,13 @@ function material_setup() {
 
 }
 
-function setup_tab() {
+function setup_tab(selector) {
 
-    var dynamicTabBar = window.dynamicTabBar = new mdc.tabs.MDCTabBar(document.querySelector('#dynamic-tab-bar'));
-    var dots = document.querySelector('.dots');
-    var panels = document.querySelector('.panels');
+    var dynamicTabBarElement = document.querySelector(selector);
+
+    var dynamicTabBar = window.dynamicTabBar = new mdc.tabs.MDCTabBar(dynamicTabBarElement);
+    var dots = dynamicTabBarElement.querySelector('.dots');
+    var panels = dynamicTabBarElement.querySelector('.panels');
 
     dynamicTabBar.preventDefaultOnClick = true;
 
@@ -86,8 +88,8 @@ function setup_tab() {
 jQuery(document).ready(function() {
 
     material_setup();
-    setup_tab();
-
+    setup_tab("#mainword-toolbar");
+    setup_tab("#mainword-right-toolbar");
 
 
     jQuery(".question-content-expanded").toggle();
